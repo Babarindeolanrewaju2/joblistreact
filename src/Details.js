@@ -16,7 +16,10 @@ const Details = (props) => {
             </div>
             <a href={props.detail.company_url}>{props.detail.company_url}</a>
             <p>{props.detail.created_at}</p>
-            <p>{props.detail.location}</p>
+            <i className="viewjob-labelWithIcon-icon1 fas fa-building"></i>{props.detail.company}
+            <div>
+            <i className="viewjob-labelWithIcon-icon fas fa-map-marker-alt"></i>{props.detail.location}
+            </div>
             <p dangerouslySetInnerHTML={ {__html: props.detail.how_to_apply }}></p>
             <p dangerouslySetInnerHTML={ {__html: props.detail.description }}></p>
         </div>
